@@ -212,6 +212,6 @@ SELECT customers.`last_name` AS `customer_name`,
     SUM(orders.`unit_price`) AS `total_unit_price`
 FROM `northwind_dw`.`fact_orders` AS orders
 INNER JOIN `northwind_dw`.`dim_customers` AS customers
-ON orders.customer_id = customers.customer_key
+ON orders.customer_key = customers.customer_key
 GROUP BY customers.`last_name`
 ORDER BY total_unit_price DESC;
