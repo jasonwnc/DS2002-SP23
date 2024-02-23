@@ -1,0 +1,11 @@
+Intructions to get the ChatBot to work
+You'll build this in a python IDE (not from Juypter)
+
+1.  python -m pip install tensorflow==2.12.1
+2. pip install tflearn
+3. Make sure your intense file is local to  your pythong training file
+4. Run python3 training.py
+5. run python3 chat.py
+
+
+You may or may not need to run python3...
